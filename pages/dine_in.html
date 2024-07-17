@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dine In Menu</title>
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/dine_in.css" />
+  </head>
+  <body>
+    <div class="container main_container">
+      <div class="header text-center">
+        <h2>DINE IN</h2>
+      </div>
+      <div class="nav-tabs-wrapper">
+        <ul class="nav nav-tabs justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#food">Food</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#drinks">Drinks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#sheesha">Sheesha</a>
+          </li>
+        </ul>
+      </div>
+      <div class="tab-content">
+        <div id="food" class="tab-pane fade show active">
+          <div class="menu-category">
+            <h4>Entree</h4>
+            <div
+              class="menu-item d-flex justify-content-between align-items-center"
+            >
+              <div class="menu-info">
+                <img
+                  src="../assets/f08dab18c62508b5c29045af1281f99a.png "
+                  alt="Roasted Chicken"
+                  class="menu-img"
+                />
+                <div class="menu-details">
+                  <h5>Roasted Chicken</h5>
+                  <p>
+                    Succulent, roasted chicken with a hint of spices. Serves
+                    with creamy cheese, and salad.
+                  </p>
+                </div>
+              </div>
+              <div class="menu-quantity">
+                <button class="btn btn-light">-</button>
+                <input type="number" value="0" class="quantity-input" />
+                <button class="btn btn-light">+</button>
+              </div>
+            </div>
+            <!-- Repeat the menu-item block for more items -->
+            <div
+              class="menu-item d-flex justify-content-between align-items-center"
+            >
+              <div class="menu-info">
+                <img
+                  src="../assets/f08dab18c62508b5c29045af1281f99a.png "
+                  alt="Roasted Chicken"
+                  class="menu-img"
+                />
+                <div class="menu-details">
+                  <h5>Roasted Chicken</h5>
+                  <p>
+                    Succulent, roasted chicken with a hint of spices. Serves
+                    with creamy cheese, and salad.
+                  </p>
+                </div>
+              </div>
+              <div class="menu-quantity">
+                <button class="btn btn-light">-</button>
+                <input type="number" value="0" class="quantity-input" />
+                <button class="btn btn-light">+</button>
+              </div>
+            </div>
+            <div
+              class="menu-item d-flex justify-content-between align-items-center"
+            >
+              <div class="menu-info">
+                <img
+                  src="../assets/f08dab18c62508b5c29045af1281f99a.png "
+                  alt="Roasted Chicken"
+                  class="menu-img"
+                />
+                <div class="menu-details">
+                  <h5>Roasted Chicken</h5>
+                  <p>
+                    Succulent, roasted chicken with a hint of spices. Serves
+                    with creamy cheese, and salad.
+                  </p>
+                </div>
+              </div>
+              <div class="menu-quantity">
+                <button class="btn btn-light">-</button>
+                <input type="number" value="0" class="quantity-input" />
+                <button class="btn btn-light">+</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="drinks" class="tab-pane fade">
+          <h4>Drinks content goes here</h4>
+        </div>
+        <div id="sheesha" class="tab-pane fade">
+          <h4>Sheesha content goes here</h4>
+        </div>
+      </div>
+      <div class="place-order text-center">
+        <button class="order_placed_btn" onclick="location='order_placed.html'">
+          Place Order
+        </button>
+      </div>
+    </div>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
