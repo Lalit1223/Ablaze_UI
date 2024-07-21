@@ -16,17 +16,29 @@
     .button-container {
         display: flex;
         flex-direction: column; /* Stack buttons vertically */
-        justify-content: space-around;
-        margin-top: 30px;
+        justify-content: space-between;
         gap: 10px;
         height: 100%; /* Full height of the container */
         
         }
 
     /* Styles for each button */
+    .back_arrow{
+
+        margin: 20px 0;
+        padding:0 0 5px 0;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        background-color: #f3ebeb00;
+        color: white;
+        font-weight: bold;
+        border: 1px solid white;
+        font-size: 20px;
+      }
+      
  
     .button_1{
-        background-image: linear-gradient(to left, #1266C1, #FF1000,#FBB03C); /* Gradient */
         transform: rotate(90deg); /* Rotate button 90 degrees counter-clockwise */
         height: 40px; /* Height of each button */
        width: 140px;
@@ -35,8 +47,19 @@
         color: white;
         font-weight: 600;
         border: none;
+        background-color: #33333300;
+        border: 1px solid white;
     }
 
+    .button_1:active{
+        background-image: linear-gradient(to left, #1266C1, #FF1000,#FBB03C); /* Gradient */
+
+    }
+
+    #clicked{
+        background-image: linear-gradient(to left, #1266C1, #FF1000,#FBB03C); /* Gradient */
+
+    }
     /* Content area beside the buttons */
     .content {
         width: 100%;   
@@ -75,14 +98,15 @@ margin-bottom: 50px;
 }
 
 .Gallery_container{
-    width: 95%;
-    height: 95vh;
-    margin-top: 50px;
+    width: 100%;
+    height: 99vh;
+    margin-top: 80px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 10px;
     padding: 10px;
     box-sizing: border-box;
+
     
 }
 
