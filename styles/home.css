@@ -17,7 +17,7 @@
     .button-container {
         display: flex;
         flex-direction: column; /* Stack buttons vertically */
-        justify-content: space-around;
+        justify-content: space-evenly;
         height: 100%; /* Full height of the container */
     }
 
