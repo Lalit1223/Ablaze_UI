@@ -19,19 +19,21 @@
         flex-direction: column; /* Stack buttons vertically */
         justify-content: space-evenly;
         height: 100%; /* Full height of the container */
+        width: max-content;
     }
 
     /* Styles for each button */
     .button_1{
-        background-image: linear-gradient(to left, #1266C1, #FF1000,#FBB03C); /* Gradient */
+        background-image: linear-gradient(to right, #1266C1, #FF1000,#FBB03C); /* Gradient */
         transform: rotate(90deg); /* Rotate button 90 degrees counter-clockwise */
-        height: 40px; /* Height of each button */
-       width: 140px;
-       margin-left: -50px;
-       box-sizing: border-box; /* Include padding in the element's total width and height */
+        height: 55px; /* Height of each button */
+        width: 145px;
+        margin-left: -48px;
+        box-sizing: border-box; /* Include padding in the element's total width and height */
         color: white;
         font-weight: 600;
-        border: none;
+        border: 1 px solid white;
+        border-radius: 5px 5px 0 0 ;
     }
 
 
