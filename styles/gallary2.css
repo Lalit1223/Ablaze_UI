@@ -1,0 +1,175 @@
+/* Apply styles specifically for mobile devices */
+@media only screen and (max-width: 768px) {
+    body{
+        background-color: black; /* Dark background */
+     }
+   
+    /* Main container for the entire screen */
+    .main_container {
+        display: flex;
+        height: 100vh; /* Full height of the viewport */
+        flex-direction: row; /* Place button container and content side by side */
+        background-color: black; /* Dark background */
+    }
+
+    /* Container for the buttons */
+    .button-container {
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        justify-content: space-between;
+        gap: 10px;
+        height: 100%; /* Full height of the container */
+        
+        }
+
+    /* Styles for each button */
+    .back_arrow{
+
+        margin: 20px 0;
+        padding:0 5px 5px 0;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        background-color: #f3ebeb00;
+        color: white;
+        font-weight: bold;
+        border: 1px solid white;
+        font-size: 18px;
+      }
+      
+ 
+    .button_1{
+        transform: rotate(90deg); /* Rotate button 90 degrees counter-clockwise */
+        background-color: #f3ebeb00;
+
+        height: 55px; /* Height of each button */
+       width: 140px;
+       margin-left: -50px;
+       box-sizing: border-box; /* Include padding in the element's total width and height */
+        color: white;
+        font-weight: 600;
+        border: 1 px solid white;
+        border-radius: 5px 5px 0 0 ;
+    }
+
+    .button_1:active{
+        background-image: linear-gradient(to right, #1266C1, #FF1000,#FBB03C); /* Gradient */
+
+    }
+
+    #clicked{
+        background-image: linear-gradient(to right, #1266C1, #FF1000,#FBB03C); /* Gradient */
+
+    }
+    /* Content area beside the buttons */
+    .content {
+        width: 100%;   
+        color: white;
+        overflow: scroll;
+    }
+
+    /* Styling for top logo */
+    .top_logo {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 20px 50px 50px 0;
+        text-align: right;
+        }
+
+
+    .lmn p,
+    .lmn a
+       {
+        width: max-content; 
+        color: white;
+      }
+
+.lmn i{
+    font-size: medium;
+    color: #FF1000;
+    margin: 10px;
+}
+
+.lmn{
+
+    transform: rotate(90deg); /* Rotate button 90 degrees counter-clockwise */
+    margin-left: -50px;
+margin-bottom: 50px;
+}
+
+.Gallery_container1{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+
+    
+}
+.Gallery_container2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+
+    
+}
+.Gallery_container3{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;    
+}
+.gallery-item {
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.gallery-item2 {
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.gallery-item3 {
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.gallery-item img {
+    width: 139px;
+    height: 139px;
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.726);
+    border-radius: 4px;
+}
+
+.gallery-item2 img{
+    width: 293px;
+    height: 139px;
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.726);
+    border-radius: 4px;
+}
+
+.gallery-item3 img{
+    width: 85px;
+    height: 139px;
+    display: block;
+    border: 1px solid rgba(255, 255, 255, 0.726);
+    border-radius: 4px;
+
+}
+}
