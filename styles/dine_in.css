@@ -135,6 +135,7 @@
     height: 8%;
     font-weight: bold;
     color: white;
+    z-index: 2;
 
       }
   
