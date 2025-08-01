@@ -1,7 +1,34 @@
 @media only screen and (min-width: 769px) {
-  body {
-    display: none;
-  }
+    body {
+        background-color: #1a1a1a;
+        color: white;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+    }
+    
+    body::before {
+        content: "📱 Please open this website on your mobile device for the best experience";
+        font-size: 1.5em;
+        background: linear-gradient(135deg, #1367C1, #FF1B05, #FBB03C);
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        max-width: 500px;
+        display: block;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    /* Hide all other content on desktop */
+    .top_logo,
+    .form-input {
+        display: none !important;
+    }
 }
 
 /* Apply styles specifically for mobile devices */
@@ -9,9 +36,6 @@
     body{
         background-color: black; /* Dark background */
         background-image:url(../assets/c3.jpg)
-
-
-
     }
    
     /* Styling for top logo */
@@ -21,32 +45,24 @@
         margin: 30px 50px 0 0;
         text-align: right;
         color: white;
-
     }
 
-  
-  .form-input{
-    margin: 50px 0 0 0;
-    padding: 40px;
-    color: white;
-    font-size: larger;
+    .form-input{
+        margin: 50px 0 0 0;
+        padding: 40px;
+        color: white;
+        font-size: larger;
     }
     
-  .btn1{
-    background: linear-gradient(to right,#1367C1,#FF1B05,#FBB03C);
-    border: none;
-    width:100% ;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    height: 8%;
-    font-weight: bold;
-    color: white;
-
-      }
-    
-    
-
-  
-    
+    .btn1{
+        background: linear-gradient(to right,#1367C1,#FF1B05,#FBB03C);
+        border: none;
+        width:100% ;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 8%;
+        font-weight: bold;
+        color: white;
+    }
 }
